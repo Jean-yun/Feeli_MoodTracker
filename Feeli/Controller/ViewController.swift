@@ -6,27 +6,47 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
-
+    
+    
+    var player: AVAudioPlayer?
+    var quoteList = QuoteList()
     
     @IBOutlet weak var quotetext: UILabel!
     @IBOutlet weak var personsays: UILabel!
-    var quoteList = QuoteList()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateUI("button1")
     }
-
+    
+    //When press button, It shows different quotes
     @IBAction func pressButton(_ sender: UIButton) {
         let userChoice = sender.currentTitle!
-        let returnedList = quoteList.updateText(userChoice)
-        
-        quotetext.text = returnedList[0].quotation
-        personsays.text = returnedList[0].person
+        updateUI(userChoice)
+        playSound(soundName: "touch")
+        print(userChoice)
         
     }
     
+    //Function
+    func updateUI(_ choice: String) {
+        let returnedList = quoteList.updateText(choice)
+        let randomIndex = Int.random(in: 0...4)
+        
+        quotetext.text = returnedList[randomIndex].quotation
+        personsays.text = returnedList[randomIndex].person
+    }
+    
+    
+    func playSound(soundName: String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player!.play()
+        
+    }
 }
 
