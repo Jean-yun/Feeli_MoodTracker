@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F420A592C3009E000B219E0 /* touch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F420A582C3009E000B219E0 /* touch.mp3 */; };
+		0F14877C2C45550B006C3705 /* darkmode.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0F14877A2C45550B006C3705 /* darkmode.pdf */; };
+		0F14877D2C45550B006C3705 /* lightmode.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0F14877B2C45550B006C3705 /* lightmode.pdf */; };
+		0F14877F2C455937006C3705 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F14877E2C455937006C3705 /* WeatherViewController.swift */; };
+		0F1487812C455AB0006C3705 /* swipe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0F1487802C455AB0006C3705 /* swipe.mp3 */; };
 		0FE2F29F2C2FA36400D8FD66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2F29E2C2FA36400D8FD66 /* AppDelegate.swift */; };
 		0FE2F2A12C2FA36400D8FD66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2F2A02C2FA36400D8FD66 /* SceneDelegate.swift */; };
 		0FE2F2A32C2FA36400D8FD66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE2F2A22C2FA36400D8FD66 /* ViewController.swift */; };
@@ -19,7 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F420A582C3009E000B219E0 /* touch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = touch.mp3; path = ../../../../Downloads/touch.mp3; sourceTree = "<group>"; };
+		0F14877A2C45550B006C3705 /* darkmode.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = darkmode.pdf; sourceTree = "<group>"; };
+		0F14877B2C45550B006C3705 /* lightmode.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = lightmode.pdf; sourceTree = "<group>"; };
+		0F14877E2C455937006C3705 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		0F1487802C455AB0006C3705 /* swipe.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = swipe.mp3; sourceTree = "<group>"; };
 		0FE2F29B2C2FA36400D8FD66 /* Feeli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feeli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FE2F29E2C2FA36400D8FD66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0FE2F2A02C2FA36400D8FD66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				0FE2F2A22C2FA36400D8FD66 /* ViewController.swift */,
+				0F14877E2C455937006C3705 /* WeatherViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -84,9 +91,11 @@
 				0FBA15E32C2FB7A100B8E697 /* Controller */,
 				0FBA15E12C2FB78C00B8E697 /* View */,
 				0FE2F2A72C2FA36500D8FD66 /* Assets.xcassets */,
-				0F420A582C3009E000B219E0 /* touch.mp3 */,
 				0FE2F2A92C2FA36500D8FD66 /* LaunchScreen.storyboard */,
 				0FE2F2AC2C2FA36500D8FD66 /* Info.plist */,
+				0F14877A2C45550B006C3705 /* darkmode.pdf */,
+				0F14877B2C45550B006C3705 /* lightmode.pdf */,
+				0F1487802C455AB0006C3705 /* swipe.mp3 */,
 			);
 			path = Feeli;
 			sourceTree = "<group>";
@@ -159,9 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FE2F2A82C2FA36500D8FD66 /* Assets.xcassets in Resources */,
+				0F1487812C455AB0006C3705 /* swipe.mp3 in Resources */,
 				0FE2F2AB2C2FA36500D8FD66 /* Base in Resources */,
-				0F420A592C3009E000B219E0 /* touch.mp3 in Resources */,
+				0F14877D2C45550B006C3705 /* lightmode.pdf in Resources */,
 				0FE2F2A62C2FA36400D8FD66 /* Base in Resources */,
+				0F14877C2C45550B006C3705 /* darkmode.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FE2F2B52C2FB09100D8FD66 /* QuoteList.swift in Sources */,
+				0F14877F2C455937006C3705 /* WeatherViewController.swift in Sources */,
 				0FE2F2B32C2FB02900D8FD66 /* Quote.swift in Sources */,
 				0FE2F2A32C2FA36400D8FD66 /* ViewController.swift in Sources */,
 				0FE2F29F2C2FA36400D8FD66 /* AppDelegate.swift in Sources */,

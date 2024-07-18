@@ -23,14 +23,16 @@ class ViewController: UIViewController {
         updateUI("button1")
     }
     
-    //When press button, It shows different quotes
-    @IBAction func pressButton(_ sender: UIButton) {
+    //When press button, It shows different quote
+    
+    @IBAction func buttonPressed(_ sender: UIButton) {
         let userChoice = sender.currentTitle!
         updateUI(userChoice)
-        playSound(soundName: "touch")
+        playSound(soundName: "swipe")
         print(userChoice)
-        
     }
+
+        
     
     //Function
     func updateUI(_ choice: String) {
@@ -41,12 +43,18 @@ class ViewController: UIViewController {
         personsays.text = returnedList[randomIndex].person
     }
     
-    
     func playSound(soundName: String) {
         let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
         player = try! AVAudioPlayer(contentsOf: url!)
         player!.play()
         
     }
+    
+    
+    @IBAction func weatherPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+        
+    }
+    
 }
 
